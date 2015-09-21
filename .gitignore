@@ -21,3 +21,5 @@
 Ignore Intelli J stuff
 /.idea
 /.rspec
+
+/app/assets/.DS_Store

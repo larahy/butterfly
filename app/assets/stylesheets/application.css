@@ -13,4 +13,43 @@
  *= require_tree .
  *= require_self
  *= require foundation
+ *= require flaticon
  */
+
+ @font-face {
+	font-family: Apex;
+	src: url("font.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+ .logo svg{
+ 	width: 50px;
+ 	margin: 0 10px;
+ 	color: white;
+ 	/*padding-right: 50px;*/
+ }
+
+ .top-bar {
+		padding-top: 15px;
+    padding-bottom: 65px;
+    background-color: #162959;
+ }
+
+
+ .white {
+ 	color: white;
+ 	font-size: 50px !important;
+ 	padding: 0 20px;
+ }
+
+.apex {
+ 	font-family: Apex;
+ 	color: white;
+ }
+
+ .row.navigation {
+ 	padding-bottom: 30px;
+ }
+
+
