@@ -24,3 +24,4 @@ Ignore Intelli J stuff
 
 /app/assets/.DS_Store
 /butterfly.iml
+*.DS_Store

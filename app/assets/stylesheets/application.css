@@ -13,43 +13,85 @@
  *= require_tree .
  *= require_self
  *= require foundation
+ *= require foundation-icons
  *= require flaticon
  */
 
- @font-face {
-	font-family: Apex;
-	src: url("font.otf") format("opentype");
-	font-weight: normal;
-	font-style: normal;
+@font-face {
+    font-family: Apex;
+    src: url("font.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
 }
 
- .logo svg{
- 	width: 50px;
- 	margin: 0 10px;
- 	color: white;
- 	/*padding-right: 50px;*/
- }
-
- .top-bar {
-		padding-top: 15px;
+.top-bar {
+    padding-top: 15px;
     padding-bottom: 65px;
     background-color: #17D8C2;
- }
+}
 
+.logo {
+    left: 5px;
+    top: -4px;
+    position: absolute;
+    max-width: 10rem;
+    margin-top: -18px;
+    margin-left: 9px;}
 
- .white {
- 	color: white;
- 	font-size: 68px !important;
- 	padding: 0 20px;
- }
+.white {
+    color: white;
+    font-size: 80px;
+}
 
 .apex {
- 	font-family: Apex;
- 	color: white;
- }
+    font-family: Apex;
+    color: white;
+}
 
- .row.navigation {
- 	padding-bottom: 30px;
- }
+div.navigation {
+    padding-bottom: 40px;
+}
 
+.center.row {
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    max-width: 500px;
+}
 
+.signup-panel {
+    padding: 15px;
+}
+
+.signup-panel i {
+    font-size: 30px;
+    line-height: 50px;
+    color: #999;
+}
+
+.signup-panel form input, .signup-panel form span {
+    height: 50px;
+}
+
+.signup-panel .welcome {
+    font-size: 26px;
+    text-align: center;
+    margin-left: 0;
+}
+
+.signup-panel .button {
+    margin-left: 35%;
+}
+
+section.active {
+    padding-top: 75px !important;
+}
+
+p.title {
+    border-bottom: 1px solid #cccccc !important;
+}
+
+.content{
+    height: 450px;
+}

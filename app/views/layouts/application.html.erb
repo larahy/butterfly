@@ -2,13 +2,35 @@
 <html>
 <head>
   <title>Butterfly</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "vendor/modernizr", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+<div class="navigation">
+    <div class="contain-to-grid sticky large-8 columns">
+        <nav class="menu large-8 columns">
+            <h1 class="name apex">Ripple</h1>
+            <ul class="inline-list hide-for-small-only account-action">
+                <% if user_signed_in? %>
+                    <li><%= link_to('SIGN OUT', destroy_user_session_path, :method => :delete, :class => "apex")  %> </li>
+                    <li><%= link_to('EDIT DETAILS', edit_user_registration_path, :class => "apex")  %> </li>
+                <% else %>
+                    <li><%= link_to('Login', new_user_session_path, :class => "apex") %></li>
+                    <li class =""><%= link_to('Sign up', new_user_registration_path, :class => "apex signup")%>  </li>
+                <% end %>
+            </ul>
+            <a class="account hide-for-medium-up" href="#" data-reveal-id="myModal"><i class="fi-unlock"></i></a>
+        </nav>
+    </div>
+</div>
+
 <%= yield %>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 
 </body>
 </html>
